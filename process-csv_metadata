@@ -1,0 +1,29 @@
+{
+  "name": "Transform CSV",
+  "description": "Transforms a csv file and saves it into Cloud Datastore",
+  "parameters": [{
+    "name": "input",
+    "label": "Input Cloud Storage file",
+    "help_text": "The path to the csv file in Google Cloud Storage Bucket",
+    "regexes": ["^gs:\/\/[^\n\r]+$"],
+    "is_optional": false
+  },
+  {
+    "name": "entity",
+    "label": "Cloud Datastore entity name",
+    "help_text": "The Google Cloud Datastore entity name",
+    "is_optional": false
+  },
+  {
+    "name": "user",
+    "label": "User",
+    "help_text": "The user identifier",
+    "is_optional": false
+  },
+  {
+    "name": "dataset",
+    "label": "Dataset",
+    "help_text": "The dataset",
+    "is_optional": false
+  }]
+}
